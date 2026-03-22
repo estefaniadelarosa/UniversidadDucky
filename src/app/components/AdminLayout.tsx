@@ -94,7 +94,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
             >
               <div className="flex items-center gap-3">
                 <Users className="w-5 h-5 flex-shrink-0" />
-                {isOpen && <span className="text-sm font-medium">Gestión de usuarios</span>}
+                {isOpen && <span className="text-sm font-medium">Usuarios</span>}
               </div>
               {isOpen && (
                 usersMenuOpen ? (
@@ -106,19 +106,6 @@ export function AdminLayout({ children }: AdminLayoutProps) {
             </button>
             {isOpen && usersMenuOpen && (
               <div className="ml-4 mt-1 space-y-1">
-                <button
-                  onClick={() => {
-                    navigate('/admin/users-management');
-                    setIsOpen(false);
-                  }}
-                  className={`w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-colors text-sm ${
-                    isActive('/admin/users-management')
-                      ? 'bg-gray-100 text-gray-900'
-                      : 'text-gray-600 hover:bg-gray-50'
-                  }`}
-                >
-                  Gestión de Usuarios
-                </button>
                 <button
                   onClick={() => {
                     navigate('/admin/users-list');
@@ -147,19 +134,6 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                 </button>
                 <button
                   onClick={() => {
-                    navigate('/admin/user/edit');
-                    setIsOpen(false);
-                  }}
-                  className={`w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-colors text-sm ${
-                    isActive('/admin/user/edit')
-                      ? 'bg-gray-100 text-gray-900'
-                      : 'text-gray-600 hover:bg-gray-50'
-                  }`}
-                >
-                  Cambio de Usuario
-                </button>
-                <button
-                  onClick={() => {
                     navigate('/admin/user/delete');
                     setIsOpen(false);
                   }}
@@ -170,6 +144,19 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                   }`}
                 >
                   Baja de Usuario
+                </button>
+                <button
+                  onClick={() => {
+                    navigate('/admin/user/edit');
+                    setIsOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-colors text-sm ${
+                    isActive('/admin/user/edit')
+                      ? 'bg-gray-100 text-gray-900'
+                      : 'text-gray-600 hover:bg-gray-50'
+                  }`}
+                >
+                  Cambio de Usuario
                 </button>
                 <button
                   onClick={() => {

@@ -21,7 +21,7 @@ export default function AdminDashboard() {
 
   const stats = [
     { label: 'Libros', count: 567, link: '/admin/books/catalog' },
-    { label: 'Usuarios', count: 140, link: '/admin/users-management' },
+    { label: 'Usuarios', count: 140, link: '/admin/users-list' },
     { label: 'Solicitudes de Préstamo', count: 14, link: '/admin/system/loans' },
     { label: 'Devoluciones', count: 2, link: '/admin/system/returns' },
   ];

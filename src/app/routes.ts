@@ -6,7 +6,6 @@ import RecoverPasswordConfirmation from "./pages/RecoverPasswordConfirmation";
 import RecoverPasswordReset from "./pages/RecoverPasswordReset";
 import RecoverPasswordSuccess from "./pages/RecoverPasswordSuccess";
 import AdminDashboard from "./pages/AdminDashboard";
-import AdminUsersManagement from "./pages/AdminUsersManagement";
 import AdminUsersList from "./pages/AdminUsersList";
 import AdminUserRegister from "./pages/AdminUserRegister";
 import AdminUserDelete from "./pages/AdminUserDelete";
@@ -53,10 +52,6 @@ export const router = createBrowserRouter([
   {
     path: "/admin",
     Component: AdminDashboard,
-  },
-  {
-    path: "/admin/users-management",
-    Component: AdminUsersManagement,
   },
   {
     path: "/admin/users-list",
