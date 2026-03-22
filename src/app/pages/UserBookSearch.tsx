@@ -173,16 +173,6 @@ export default function UserBookSearch() {
   return (
     <UserLayout>
       <div className="min-h-screen bg-white">
-        {/* Header with logo */}
-        <div className="flex justify-between items-center p-4 border-b border-gray-200">
-          <div className="w-12 h-12 rounded-full bg-[#2c1810] flex items-center justify-center text-2xl border-2 border-yellow-600">
-            🦆
-          </div>
-          <div className="w-12 h-12 rounded-full bg-[#2c1810] flex items-center justify-center text-2xl border-2 border-yellow-600">
-            🦆
-          </div>
-        </div>
-
         {/* Main Content */}
         <div className="max-w-7xl mx-auto px-6 py-8">
           {/* Title */}

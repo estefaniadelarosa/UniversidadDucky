@@ -41,29 +41,35 @@ export function AdminLayout({ children }: AdminLayoutProps) {
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+          className="fixed inset-0 z-40"
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
           onClick={() => setIsOpen(false)}
         />
       )}
 
       {/* Sidebar */}
       <aside
-        className={`bg-white border-r border-gray-200 transition-all duration-300 flex flex-col fixed lg:relative h-full z-50 ${
-          isOpen ? 'translate-x-0 w-64' : '-translate-x-full lg:translate-x-0 lg:w-20'
+        className={`bg-white border-r border-gray-200 transition-all duration-300 flex flex-col fixed h-full z-50 ${ 
+          isOpen ? 'translate-x-0 w-64' : '-translate-x-full w-64 lg:translate-x-0 lg:w-20'
         }`}
       >
         {/* Header */}
         <div className="p-4 border-b border-gray-200 flex items-center justify-between">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
-          >
-            {isOpen ? (
+          {isOpen ? (
+            <button
+              onClick={() => setIsOpen(false)}
+              className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            >
               <X className="w-6 h-6 text-gray-700" />
-            ) : (
+            </button>
+          ) : (
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            >
               <Menu className="w-6 h-6 text-gray-700" />
-            )}
-          </button>
+            </button>
+          )}
         </div>
 
         {/* Menu Items */}
@@ -348,7 +354,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 overflow-auto">
+      <main className="flex-1 overflow-auto lg:pl-20">
         {/* Mobile menu button */}
         <div className="lg:hidden p-4 bg-white border-b border-gray-200">
           <button
