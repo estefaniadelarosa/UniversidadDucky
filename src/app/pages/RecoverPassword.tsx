@@ -21,7 +21,7 @@ export default function RecoverPassword() {
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm mx-auto">
         {/* Title */}
         <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">
-          Recuperar contraseña
+          Restablecer contraseña
         </h1>
 
         {/* Form */}
