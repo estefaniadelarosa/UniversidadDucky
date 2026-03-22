@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { AdminLayout } from '../components/AdminLayout';
 import { Filter, Plus, X } from 'lucide-react';
-import toEngineerImg from 'figma:asset/c56f94187c5aad9ebd279b058bb61b1c964e7cb2.png';
-import invisibleWomenImg from 'figma:asset/c8a7a627dcfcac0a7aa1161fee3e58b95ac6a212.png';
+import toEngineerImg from 'figma:asset/aed8d75499b4637c3a895d42667062395ca8e7c5.png';
+import invisibleWomenImg from 'figma:asset/128ea057d14d1dd8739244b6a18d835f06de8683.png';
 
 type Book = {
   id: string;
