@@ -88,24 +88,30 @@ const recommendedBooks: Book[] = [
   },
   {
     id: '11',
+    title: 'Kim Ji Young, born 1982',
+    author: 'Cho Nam-joo',
+    image: 'https://images.unsplash.com/photo-1661723648631-c17d85c74c76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrb3JlYW4lMjBub3ZlbCUyMGJvb2slMjBjb3ZlciUyMHdvbWFufGVufDF8fHx8MTc3NDIwMjMxNXww&ixlib=rb-4.1.0&q=80&w=1080',
+  },
+  {
+    id: '12',
     title: 'La Biblioteca de la Medianoche',
     author: 'Matt Haig',
     image: bibliotecaMedianocheImg,
   },
   {
-    id: '12',
+    id: '13',
     title: 'La Metamorfosis',
     author: 'Franz Kafka',
-    image: metamorfosisImg,
+    image: 'https://images.unsplash.com/photo-1752243779921-965ef048defc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXRhbW9ycGhvc2lzJTIwa2Fma2ElMjBib29rJTIwY292ZXJ8ZW58MXx8fHwxNzc0MjAyMzEyfDA&ixlib=rb-4.1.0&q=80&w=1080',
   },
   {
-    id: '13',
+    id: '14',
     title: 'Flesh',
     author: 'Various Authors',
     image: fleshImg,
   },
   {
-    id: '14',
+    id: '15',
     title: 'Before the Coffee Gets Cold',
     author: 'Toshikazu Kawaguchi',
     image: beforeCoffeeImg,
@@ -118,7 +124,7 @@ export default function UserHomepage() {
       <div className="p-6 max-w-7xl mx-auto">
         {/* Welcome Section */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Hola, Estefanina</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">Hola, Estefania</h1>
           <p className="text-lg text-gray-600">Descubre tu siguiente lectura</p>
         </div>
 

@@ -1,5 +1,5 @@
 
-  # Universidad Ducky
+  # Convert design to functional React (Copy)
 
   This is a code bundle for Convert design to functional React (Copy). The original project is available at https://www.figma.com/design/1t5mOrh7Hv0XDT4aczPJqz/Convert-design-to-functional-React--Copy-.
 
